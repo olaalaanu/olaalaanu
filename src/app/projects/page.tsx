@@ -70,13 +70,6 @@ export default function PortfolioPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                title: "Student Course Portal",
-                description:
-                  "Built a secure course portal using Flask and Azure AD B2C to compare Zero Trust vs traditional login.",
-                tools: "Python Flask, Azure, Bootstrap",
-                link: "#",
-              },
-              {
                 title: "Personal Portfolio Website",
                 description:
                   "Developed a fast, responsive portfolio using Next.js and Tailwind CSS.",
