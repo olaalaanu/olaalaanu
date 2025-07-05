@@ -29,7 +29,7 @@ export default function SocialShare({ slug, title }: Props) {
     <div className="mt-8">
       <p className="text-sm text-gray-500 mb-2">Share this post:</p>
       <div className="flex flex-wrap gap-3">
-        <FacebookShareButton url={shareUrl} quote={title}>
+        <FacebookShareButton url={shareUrl}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>
 
