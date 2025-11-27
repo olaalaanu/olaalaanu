@@ -10,7 +10,7 @@ type Props = {
 export default async function LatestCategoryPost({
   category,
   title,
-  limit = 1,
+  limit = 3,
 }: Props) {
   const allPosts = await getAllPosts();
 
@@ -21,7 +21,7 @@ export default async function LatestCategoryPost({
   if (posts.length === 0) {
     return (
       <section>
-        <div className="max-w-2xl mx-auto mb-12">
+        <div className="max-w-5xl mx-auto mb-12">
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
               {title || `Latest in ${category}`}
@@ -37,15 +37,15 @@ export default async function LatestCategoryPost({
 
   return (
     <section>
-      <div className="max-w-2xl mx-auto mb-12">
+      <div className="max-w-5xl mx-auto mb-12">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2">
             {title || `Latest in ${category}`}
           </h2>
 
           <div className="space-y-6">
             {posts.slice(0, limit).map((post) => (
-              <div key={post.slug} className="py-4">
+              <div key={post.slug} className="py-2">
                 <h3 className="text-xl font-bold text-blue-600">
                   <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                 </h3>

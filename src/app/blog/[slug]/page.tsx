@@ -7,7 +7,7 @@ import Image from "next/image";
 import SocialShare from "@/components/SocialShare";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
-// ✅ generateStaticParams stays the same
+// generateStaticParams stays the same
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   }));
 }
 
-// ✅ Await params using the dynamic API format
+// Await params using the dynamic API format
 export async function generateMetadata({
   params,
 }: {
@@ -30,7 +30,7 @@ export async function generateMetadata({
   };
 }
 
-// ✅ Await params here too
+// Await params here too
 export default async function BlogPost({
   params,
 }: {

@@ -22,9 +22,9 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className={linkStyle("/")}>
+          {/* <Link href="/" className={linkStyle("/")}>
             Home
-          </Link>
+          </Link> */}
           <Link href="/about" className={linkStyle("/about")}>
             About
           </Link>
@@ -80,9 +80,9 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-2">
-          <Link href="/" className="block" onClick={() => setIsOpen(false)}>
+          {/* <Link href="/" className="block" onClick={() => setIsOpen(false)}>
             Home
-          </Link>
+          </Link> */}
           <Link
             href="/about"
             className="block"
