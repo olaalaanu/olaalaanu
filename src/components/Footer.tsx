@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="border-t py-6 text-center text-sm text-gray-500">
+    <footer className="border-t border-border py-6 text-center text-sm text-gray-500">
       <div className="flex justify-center space-x-6 mb-2">
         <a
           href="https://github.com/olaalaanu"

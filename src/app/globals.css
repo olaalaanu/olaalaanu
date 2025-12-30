@@ -1,3 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @import "katex/dist/katex.min.css";
+@theme {
+  --color-primary: #548dc7; /* Single primary color */
+  --color-secondary: #6ac754;
+  --color-border: #e6e6e6;
+}

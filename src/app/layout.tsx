@@ -6,8 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
-  title: "Olaalaanu Website and Blog",
-  description: "Welcome to olaalaanu personal home online",
+  title: "Lateef Ismaila | Data Analyst & Full Stack Data Developer",
+  description: "Welcome to Lateef Ismaila Personal Website and Blog",
 };
 
 export default function RootLayout({

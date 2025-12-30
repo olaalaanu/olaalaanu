@@ -13,7 +13,7 @@ export default function BackToTop() {
   return show ? (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 bg-blue-600 text-white p-2 rounded-full shadow-lg"
+      className="fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg"
       aria-label="Back to top"
     >
       ↑
