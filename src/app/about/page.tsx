@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import AnimatedSection from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "About | Lateef Ismaila",
@@ -12,18 +11,16 @@ export default function AboutPage() {
     <section className="px-4 py-12" id="about">
       <div className="max-w-2xl mx-auto space-y-10">
         <div className="text-center">
-          <AnimatedSection>
-            <h1 className="text-4xl font-bold mb-2">About Me</h1>
-            <p className="text-lg text-gray-600">
-              Get to know who I am and what I do.
-            </p>
-          </AnimatedSection>
+          <h1 className="text-4xl font-bold mb-2">About Me</h1>
+          <p className="text-lg text-gray-600">
+            Get to know who I am and what I do.
+          </p>
         </div>
 
         <div className="mt-6 md:mt-0 text-lg space-y-4 text-justify">
           <p>
-            Welcome! I&apos;m <strong>AbdulLateef</strong>, who loves to make
-            sense of data and build cool things on the web.
+            Welcome! I&apos;m <strong className="text-primary">Lateef</strong>,
+            who loves to make sense of data and build cool things on the web.
           </p>
           <p>
             As a data analyst, I&apos;m all about uncovering stories hidden
@@ -34,11 +31,11 @@ export default function AboutPage() {
             data applications that make information accessible and useful.
           </p>
           <p>
-            But my skills don&apos;t stop there! I&apos;m also a dedicated web
-            developer, fluent in Python, PHP, JavaScript, HTML, and CSS. I love
-            bringing ideas to life online, exploring and engaging digital
-            experiences, including this personal website you are currently
-            exploring.
+            But my skills don&apos;t stop there! I&apos;m also a dedicated Full
+            Stack Data Developer, fluent in Python, JavaScript, PHP, Java, HTML,
+            and CSS. I love bringing ideas to life online, exploring and
+            engaging digital experiences, including this personal website you
+            are currently exploring.
           </p>
           <p>
             Outside of coding, I enjoy writing, learning new skills, and
@@ -74,10 +71,9 @@ export default function AboutPage() {
         <div>
           <h2 className="text-4xl font-semibold mb-4">Tools</h2>
           <h3 className="text-2xl mb-4">Software</h3>
-          <p>VS Code (New Moon Theme, Pylance, Live Server)</p>
+          <p>VS Code (Pylance, Live Server, Eslint, Prettier)</p>
           <p>Python (Pandas, Numpy, Matplotlib, Seaborn, TensorFlow)</p>
           <h3 className="text-2xl mb-4 mt-4">Hardware</h3>
-          <p>Levono ThinPad L530</p>
         </div>
       </div>
     </section>
