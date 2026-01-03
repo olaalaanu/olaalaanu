@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Data: Understanding the Foundation of the Digital World"
-date: "2025-07-04"
+date: "2026-01-03"
 excerpt: "In today’s world, data is everywhere. Every time you browse a website, make an online purchase, stream a video, or even walk past a CCTV camera, data is being generated."
 category: "Data Analytics"
 tags: ["Data", "Qualitative", "Quantitative"]
@@ -13,7 +13,7 @@ This introduction aims to give you a clear understanding of what data is, its ty
 
 ## What is Data?
 
-Data is simply information—raw facts, figures, or details collected for reference, analysis, or decision-making. e.g: A number like 25, A name like “Amaka”, A measurement like 18.5 °C, A picture of a product, A location on a map.
+Data is simply information, raw facts, figures, or details collected for reference, analysis, or decision-making. e.g: A number like 25, A name like “Amaka”, A measurement like 18.5 °C, A picture of a product, A location on a map.
 
 ## Why Is Data Important?
 
@@ -32,7 +32,7 @@ Data can be classified in different ways. Here are the most common types:
 
 1. **Structured Data:** This is highly organized and can be easily stored in tables or databases. Examples are names, emails, phone numbers, financial transactions, inventory lists etc. Structured data is easy for computers to analyze using SQL and spreadsheets.
 2. **Unstructured Data:** This type does not have a predefined structure. Examples are images, videos, emails, social media posts, documents etc. Unstructured data makes up over 80% of all data today.
-3. **Semi-Structured Data:** A mix of both worlds—organized but not in rigid tables. Examples are JSON, XML, Log files etc. This is common in web applications and APIs.
+3. **Semi-Structured Data:** A mix of both worlds organized but not in rigid tables. Examples are JSON, XML, Log files etc. This is common in web applications and APIs.
 
 ## How Data Is Collected
 
