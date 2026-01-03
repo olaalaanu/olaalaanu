@@ -20,7 +20,7 @@ type Props = {
   title: string;
 };
 
-const DOMAIN = "http://olaalaanu.vercel.app";
+const DOMAIN = "https://olaalaanu.com";
 
 export default function SocialShare({ slug, title }: Props) {
   const shareUrl = `${DOMAIN}/blog/${slug}`;
