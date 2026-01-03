@@ -19,7 +19,7 @@ export default function PortfolioPage() {
         </div>
 
         {/* Data Analytics Section */}
-        <section>
+        {/* <section>
           <h2 className="text-2xl font-semibold mb-6">
             Data Analytics Projects
           </h2>
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Web Development Section */}
         <section>
@@ -74,7 +74,13 @@ export default function PortfolioPage() {
                 description:
                   "Developed a fast, responsive portfolio using Next.js and Tailwind CSS.",
                 tools: "Next.js, Tailwind CSS",
-                link: "#",
+                link: "https://github.com/olaalaanu/olaalaanu",
+              },
+              {
+                title: "OLFootball Quiz",
+                description: "Football Quiz App using React and Tailwind CSS",
+                tools: "Next.js, Tailwind CSS",
+                link: "https://github.com/olaalaanu/olfootball-quiz",
               },
             ].map((project, index) => (
               <div
