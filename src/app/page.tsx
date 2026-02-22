@@ -1,19 +1,21 @@
-import HeroSection from "@/components/HeroSection";
-import LatestCategoryPost from "@/components/LatestCategoryPost";
+import HeroSection from "@/components/sections/HeroSection";
+import AboutSection from "@/components/sections/AboutSection";
+import PortfolioSection from "@/components/sections/PortfolioSection";
+// import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import LatestPosts from "@/components/sections/LatestPosts";
+import ServicesSection from "@/components/sections/ServicesSection";
+import TechStackSection from "@/components/sections/TechStackSection";
 
 export default async function HomePage() {
   return (
     <>
       <HeroSection />
-      <LatestCategoryPost category="Data Analytics" title="Data Analytics" />
-      <LatestCategoryPost
-        category="Web Design and Development"
-        title="Web Design and Development"
-      />
-      <LatestCategoryPost
-        category="Football"
-        title="Football Facts and Analysis"
-      />
+      <AboutSection />
+      <ServicesSection />
+      <TechStackSection />
+      <PortfolioSection />
+      {/* <TestimonialsSection /> */}
+      <LatestPosts />
     </>
   );
 }

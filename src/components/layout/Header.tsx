@@ -10,7 +10,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,7 +20,7 @@ export default function Navbar() {
       : "text-gray-700 hover:text-secondary hover:underline hover:underline-offset-8 decoration-wavy";
 
   return (
-    <header className="border-b-1 border-border text-gray-500">
+    <header className="border-b-1 border-quinary text-gray-500">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
           Lateef Ismaila
@@ -36,6 +36,9 @@ export default function Navbar() {
           </Link>
           <Link href="/projects" className={linkStyle("/projects")}>
             Projects
+          </Link>
+          <Link href="/contact" className={linkStyle("/contact")}>
+            Contact
           </Link>
         </div>
 
@@ -79,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-2">
+        <div className="md:hidden bg-white px-4 pb-4 space-y-2">
           <Link
             href="/about"
             className="block"
@@ -95,6 +98,13 @@ export default function Navbar() {
             Projects
           </Link>
           <Link href="/blog" className="block" onClick={() => setIsOpen(false)}>
+            Blog
+          </Link>
+          <Link
+            href="/contact"
+            className="block"
+            onClick={() => setIsOpen(false)}
+          >
             Blog
           </Link>
           <div className="flex space-x-4 mt-4 justify-center">

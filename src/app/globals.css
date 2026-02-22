@@ -2,7 +2,11 @@
 @plugin "@tailwindcss/typography";
 @import "katex/dist/katex.min.css";
 @theme {
-  --color-primary: #548dc7; /* Single primary color */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+  --color-primary: #548dc7;
   --color-secondary: #6ac754;
-  --color-border: #e6e6e6;
+  --color-tertiary: #c79c54;
+  --color-quaternary: #c754ae;
+  --color-quinary: #e6e6e6;
 }
