@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
+import { getReadingTime } from "./readingTime";
 
 const postsDirectory = path.join(process.cwd(), "src", "content", "blog");
 
@@ -25,7 +26,7 @@ export async function getAllPosts() {
           author: data.author || "Anonymous",
           avatar: data.avatar || "/avatars/avatar.png",
         };
-      })
+      }),
     );
   } catch {
     return [];
@@ -36,6 +37,7 @@ export async function getPostBySlug(slug: string) {
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = await fs.readFile(filePath, "utf8");
   const { data, content } = matter(fileContents);
+  const readingTime = getReadingTime(content);
 
   return {
     title: data.title,
@@ -46,5 +48,6 @@ export async function getPostBySlug(slug: string) {
     author: data.author || "Anonymous",
     avatar: data.avatar || "/avatars/avatar.png",
     content,
+    readingTime,
   };
 }

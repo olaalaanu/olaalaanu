@@ -23,7 +23,7 @@ export default async function BlogPage() {
         </h2>
         <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
           Thoughts on Data, <br />
-          <span className="text-secondary">Tech & Strategy.</span>
+          <span className="text-secondary">Tech & Football</span>
         </h1>
         <p className="mt-6 text-lg text-slate-500 max-w-2xl leading-relaxed">
           A collection of articles where I share my journey in full-stack
@@ -88,7 +88,7 @@ export default async function BlogPage() {
         )}
       </section>
 
-      {/* 3. Newsletter / Subscribe (Optional Design Touch) */}
+      {/* Newsletter / Subscribe */}
       <section className="py-20 bg-slate-50 px-6">
         <div className="max-w-5xl mx-auto p-12 rounded-[3rem] bg-white border border-[var(--color-quinary)] text-center">
           <h3 className="text-2xl font-bold text-slate-900 mb-2">
